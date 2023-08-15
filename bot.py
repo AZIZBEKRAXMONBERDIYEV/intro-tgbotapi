@@ -2,12 +2,12 @@ import requests
 
 
 BASE_URL = 'https://api.telegram.org/bot'
-TOKEN    = "6602447524:AAFuq2qNvn61P7j5ocEdDxoRn0jw8TVAO4Y"
+TOKEN    = "6214348294:AAGnxgya_9o0i-uWMnIuqT0nuqG3VCCbjlg"
 
 
 def getMe() -> dict:
     '''getting info about the bot'''
-    url = f"{BASE_URL}{TOKEN}/getMe"
+    url = f"{BASE_URL}{TOKEN}/getUpdates"                          
 
     response = requests.get(url)
 
